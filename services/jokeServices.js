@@ -1,5 +1,5 @@
 (function(window) {
-  // You can enable the strict mode commenting the following line
+  // You can enable the strict mode by commenting the following line
   // 'use strict';
 
   function norrisCode() {
@@ -32,8 +32,7 @@
     return _norrisObj;
   }
 
-  // We need that our library is globally accesible, then we save in the window
-  if (typeof window.norris === "undefined") {
+if (typeof window.norris === "undefined") {
     window.norris = norrisCode();
   }
 })(window);
