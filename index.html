@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Fun Chuck Norris Facts" />
+<meta name="author" content="MLE Iacovetti" />
+
+<head>
+  <title>Norris Code</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container bg"  id="app">
+    <div class="row">
+      <div class="col-xl-4 chuck">
+        <img src="https://i.dlpng.com/static/png/1490495-chuck-norris-png-chuck-norris-png-705_816_preview.png"
+          alt="Chuck Norris" width="380px" />
+      </div>
+      <div class="col-xl-8 facts">
+        <h1 class="title">FACT:</h1>
+        <blockquote>
+          <p id="joke_display">
+            {{joke}}
+          </p>
+        </blockquote>
+        <button type="button" v-on:click="getNewJoke" class="btn btn-danger">GET FACT</button>
+      </div>
+    </div>
+  </div>
+  <div id="root"></div>
+
+
+</body>
+<footer />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="services/jokeServices.js"></script>
+<script type="text/javascript">
+  var app = new Vue({
+    el: '#app',
+    data: {
+      joke: ""
+    },
+    mounted() {
+      norris.getJoke().then(response => this.joke = response.value)
+    },
+    methods: {
+      getNewJoke: function () {
+        norris.getJoke().then(response => this.joke = response.value)
+      }
+    }
+  });
+ 
+
+</script>
+
+</html>

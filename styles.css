@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chuck img {
+  vertical-align: bottom;
+}
+
+.facts {
+  margin-top: 25px;
+  margin-left: 400px;
+  width: 500px;
+  position: absolute;
+}
+
+.row {
+  margin-top: 80px;
+}
+
+.title {
+  line-height: 150px;
+}
+
+#joke_display {
+  height: 250px;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+    "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 26.4px;
+  color: black;
+  text-shadow: rgb(219, 214, 193) 1px 0 15px;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal,
+    "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-size: 150px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+  color: red;
+  text-shadow: rgb(219, 214, 193) 1px 0 15px;
+}
+
+p {
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/3e/fb/6a/3efb6ab7f4c2c45cc8d5d8a7b46f5877.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
